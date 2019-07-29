@@ -1,0 +1,36 @@
+<div class="modal-header">
+  <h4 class="modal-title">{{modalHeader}}</h4>
+  <button type="button" class="close" aria-label="Close" (click)="activeModal.close()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body row">
+        <div class="form-group has-float-label col-md-6 col-sm-12">
+            <label>First Name</label>
+            <input type="text" class="form-control" name="fname" [(ngModel)]="addUser.fname">
+        </div>
+        <div class="form-group has-float-label col-md-6 col-sm-12">
+            <label>Last Name</label>
+            <input type="text" class="form-control" name="lname" [(ngModel)]="addUser.lname">
+        </div>
+        <div class="form-group has-float-label col-md-6 col-sm-12">
+            <label>Email Address</label>
+            <input type="email" class="form-control" name="email" [(ngModel)]="addUser.email">
+        </div>
+        <div class="form-group has-float-label col-md-6 col-sm-12">
+            <label>Phone No</label>
+            <input type="tel" class="form-control" name="phone" [(ngModel)]="addUser.phone">
+        </div>
+        <div class="form-group has-float-label col-md-6 col-sm-12">
+            <label>Password</label>
+            <input type="password" class="form-control" name="password" [(ngModel)]="addUser.password">
+        </div>
+        <div class="form-group has-float-label col-md-6 col-sm-12">
+            <label>Confirm Password</label>
+            <!-- <input type="password" class="form-control" name="Cpassword" [(ngModel)]="Cpassword" (blur)="ConfirmPass(Cpassword)"> -->
+        </div>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-sm btn-success" (click)="AddUser('add')">{{submitButton}}</button>
+  <button type="button" class="btn btn-sm btn-danger" (click)="activeModal.close()">Close</button>
+</div>

@@ -1,0 +1,56 @@
+<div class="animated fadeIn">
+  <div class="card">
+    <div class="card-header">
+      <h5 class="pull-left">User List</h5>
+        <button class="btn btn-sm btn-square btn-primary pull-right" type="button" (click)="openAddUserModal()">Add Users</button>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead class="thead-light text-center">
+                <tr>
+                  <th>First name</th>
+                  <th>Last name</th>
+                  <th>Email</th>
+                  <th>Phone</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>John</td>
+                  <td>Doe</td>
+                  <td>john@example.com</td>
+                  <td>John</td>
+                  <td>
+                      <i class="fa fa-trash" (click)="deleteUser()"
+                      placement="top" ngbTooltip="Delete"></i>
+                      <i class="fa fa-pencil" (click)="openUpdaeUserModal('user')"
+                      placement="top" ngbTooltip="Update"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mary</td>
+                  <td>Moe</td>
+                  <td>mary@example.com</td>
+                  <td>John</td>
+                  <td>Doe</td>
+                </tr>
+                <tr>
+                  <td>July</td>
+                  <td>Dooley</td>
+                  <td>july@example.com</td>
+                  <td>John</td>
+                  <td>Doe</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
